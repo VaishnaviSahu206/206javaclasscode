@@ -1,7 +1,7 @@
 // COPY CONSTRUCTOR Example (Employee ka data copy karna)
 public class lec3 {
-    int Emp_id;       // Employee ka ID store karega
-    String Emp_name;  // Employee ka naam store karega
+    int Emp_id;       
+    String Emp_name;
 
     // Normal constructor: jab hum directly values pass karke object banate hain
     lec3(int i, String name) {
@@ -25,11 +25,10 @@ public class lec3 {
     public static void main(String[] args) {
         // Step 1: e1 object banaya using normal constructor (values diye manually)
         lec3 e1 = new lec3(206, "Vaishnavi");
-        e1.print_info();   // e1 ki details print hongi
-
-        // Step 2: e2 object banaya using copy constructor
+        e1.print_info();   
+        
+        lec3 e2 = new lec3(e1);// Step 2: e2 object banaya using copy constructor
         // Yahan e1 pass kiya gaya, matlab e2 ke andar e1 ka data copy ho jaayega
-        lec3 e2 = new lec3(e1);
 
         // Step 3: e2 ki details print karna (same output as e1 kyunki copy hua hai)
         e2.print_info();                     
