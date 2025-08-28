@@ -11,9 +11,7 @@ class Employee{
                            "  Organisation: "+Organisation);
     }
 }
-
-// Faculty class inherits Employee class (Single Inheritance)
-class Faculty extends Employee{
+class Faculty extends Employee{// Faculty class inherits Employee class (Single Inheritance)
     String Department;           
     String subject;             
     String Designation;           
@@ -23,7 +21,6 @@ class Faculty extends Employee{
         System.out.println("Department: "+Department +"\n"+"Subject: "+subject+"\n"+"Designation:"+Designation);
     }  
 }
-
 // ResearchFaculty class inherits Faculty class (Multi-Level Inheritance)
 // Chain: Employee → Faculty → ResearchFaculty
 class ResearchFaculty extends Faculty{
