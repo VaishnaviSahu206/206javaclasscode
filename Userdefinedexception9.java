@@ -1,6 +1,7 @@
+//ek custom exception class banayi InvalidEmployeeID jo Exception ko extend karti hai.
 class InvalidEmployeeID extends Exception{
     InvalidEmployeeID(String message){
-        super(message);
+        super(message);//parent Exception class ko custom error message bhejta hai
     }
 }
 class Emp_loyee{
@@ -18,8 +19,8 @@ class Emp_loyee{
 public class Userdefinedexception9 {
     public static void main(String[] args) {
         try{
-            Emp_loyee e1= new Emp_loyee(101,"Vaishnavi");
-            Emp_loyee e2= new Emp_loyee(0,"Shikha");
+            Emp_loyee e1= new Emp_loyee(101,"Vaishnavi");//valid
+            Emp_loyee e2= new Emp_loyee(0,"Shikha");//invalid
         }
         catch(InvalidEmployeeID e){
             System.out.println("custom exception: "+e);
