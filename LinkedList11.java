@@ -21,7 +21,7 @@ public class LinkedList11 {
     employees.remove("Raj");
     employees.removeFirst();
     employees.removeLast();
-    System.out.println("Employees after removals: "+employees);
+    System.out.println("Employees after removals: "+ employees);
 
 
     }
